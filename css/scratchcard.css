@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'lobster';
+    src: url('lobster-regular-webfont.woff2') format('woff2'),
+    url('lobster-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    background: #3a7fc2;
+    background: -moz-linear-gradient(top, #3a7fc2 0%, #2a448f 100%);
+    background: -webkit-linear-gradient(top, #3a7fc2 0%, #2a448f 100%);
+    background: linear-gradient(to bottom, #3a7fc2 0%, #2a448f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a7fc2', endColorstr='#2a448f', GradientType=0);
+    height: auto;
+
+}
+
+.wrapper {
+    cursor: url(../img/cursor-photo.png), url(../img/cursor-photo.cur), auto;
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+    width: 596px;
+    height: 1016px;
+    margin: 0 auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: url('../img/coin.ico'), grab;
+    cursor: url('../img/coin.ico'), -webkit-grab;
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.winner-box {
+    width: 596px;
+    height: 1016px;
+    color: #fff;
+    background: #E73C7E;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #f7a92d 0%, #e73c7e 33%, #ec6022 66%, #ffe000 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #f7a92d 0%, #e73c7e 33%, #ec6022 66%, #ffe000 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #f7a92d 0%, #e73c7e 33%, #ec6022 66%, #ffe000 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7a92d', endColorstr='E73C7E', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    background-size: 1000% 300%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite;
+    text-align: center;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+h1 {
+    font-family: 'lobster';
+    color: white;
+    text-align: center;
+    font-size: 3.8em;
+    width: 65%;
+    margin: auto;
+    margin-top: 38px;
+    text-shadow: #2b448fc7 4px 5px;
+    max-width: 660px;
+    animation: bounceInUp 1s, fadeIn 2s, .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+    ;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0 0 10px;
+    color: #fff;
+    width: 81%;
+    margin: auto;
+    padding-top: 74px;
+    line-height: 48px;
+}
+
+h3 {
+    width: 81%;
+    margin: auto;
+    padding-top: 84px;
+    font-size: 31px;
+    font-weight: 200;
+    line-height: 41px;
+    margin-bottom: 17px;
+}
+
+h5 {
+    font-family: arial;
+    color: orange;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    animation: bounceInUp 1.2s, fadeIn 1s;
+}
+
+h2,
+h3,
+h4 {
+    text-shadow: 2px 2px 3px #00000082;
+}
+
+
+
+.arrow {
+    margin: auto;
+    width: 70px;
+    display: block;
+    animation: bounceInUp 1.5s;
+}
+
+
+p {
+    font-family: arial;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    width: 700px;
+    margin: auto;
+
+}
+
+.myButton {
+    background-color: #ffffff;
+    -moz-border-radius: 32px;
+    -webkit-border-radius: 32px;
+    border-radius: 32px;
+    display: inline-block;
+    cursor: pointer;
+    color: #1c57b0;
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 56px;
+    text-decoration: none;
+}
+
+.myButton:hover {
+    background-color: #1c57b0;
+    color: white;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.social {
+    display: -webkit-inline-box;
+    width: 50%;
+    list-style: none;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 18px;
+    margin-left: 112px;
+}
+
+.social li img {
+    margin-right: 10px;
+    width: 56px;
+
+}
+
+.logo {
+    margin: auto;
+    width: 290px;
+    display: block;
+    margin-top: 17px;
+}
+
+.social-wrap {
+    width: 500px;
+    margin: auto;
+}
+
+
+.blinker {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+
+@media all and (max-width:360px) {
+
+    .container {
+        overflow: hidden;
+        position: relative;
+        width: 360px;
+        height: 1016px;
+        margin: 0 auto;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        cursor: url(../img/coin.ico), grab;
+        cursor: url(../img/coin.ico), -webkit-grab;
+    }
+
+    h1 {
+        font-family: lobster;
+        color: white;
+        text-align: center;
+        font-size: 2.6em;
+        width: 343px;
+        margin: auto;
+        margin-top: 26px;
+        text-shadow: #2b448fc7 4px 5px;
+    }
+}
